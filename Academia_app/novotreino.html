@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academia App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Montserrat:wght@100&family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=M+PLUS+Rounded+1c:wght@100&family=Montserrat:wght@100&family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        background: #ff383e;
+        margin: 0px;
+        padding: 0px;
+      }
+      h1 {
+        text-align: left;
+        font-size: 75px;
+        font-family: "Anton", sans-serif;
+        margin: 0px;
+      }
+      p {
+        color: #fff;
+        font-family: Rounded Mplus 1c;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+      }
+      header {
+        background-image: url(/img/imagem_topo.png);
+        background-position: center;
+        height: 550px;
+      }
+      img {
+        margin-top: 60px;
+        width: 380px;
+      }
+      button {
+        width: 259px;
+        height: 83px;
+        background: #000;
+        margin: 0px 0px 45px 0px;
+        cursor: pointer;
+      }
+      footer {
+        background-image: url(/img/Imagem_Base.png);
+        margin: auto;
+        padding-top: 1px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+
+      .Fonte-Vermelha {
+        margin-top: 99px;
+        color: #ff383e;
+        font-family: Anton;
+        font-size: 75px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 75px;
+      }
+      .Fonte-Branca {
+        color: #fff;
+        font-family: Anton;
+        font-size: 75px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 75px;
+      }
+      .Fonte-Branca-Main {
+        font-family: Anton;
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 45px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fff;
+      }
+      .Fonte-Branca-button {
+        color: #fff;
+        font-family: Anton;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .texto-button {
+        color: #fff;
+        text-align: center;
+        font-family: Anton;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 171px;
+        line-height: 45px;
+      }
+      .button-formato {
+        text-align: center;
+        width: 404px;
+        margin: auto;
+      }
+      .topo_logo {
+        text-align: center;
+      }
+      .texto-top {
+        width: 350px;
+        height: 75px;
+        margin: auto;
+      }
+      .texto-rodape {
+        width: 404px;
+        margin: auto;
+      }
+      .texto-p-main {
+        width: 297px;
+        height: 60px;
+        margin: auto;
+      }
+      .logo_whats {
+        background-image: url(/img/logo_whattsapp.png);
+        width: 99px;
+        height: 99px;
+        flex-shrink: 0;
+        margin: auto;
+      }
+      .contatos {
+        margin: auto;
+        width: 358px;
+      }
+    </style>
+    <header>
+      <div class="topo_logo">
+        <img src="/img/Logo.png" />
+      </div>
+      <div class="texto-top">
+        <h1 class="Fonte-Vermelha">Novo Treino</h1>
+      </div>
+    </header>
+    <!--Alinhar códigos no vsCode alt + shift + f-->
+
+    <main>
+      <h2 class="Fonte-Branca-Main">Descreva sua Atividade</h2>
+
+      <div class="button-formato">
+        <button class="Fonte-Branca-button">Nome :</button>
+        <button class="Fonte-Branca-button">Descrição :</button>
+        <button class="Fonte-Branca-button">Tempo :</button>
+        <button class="Fonte-Branca-button">Repetições :</button>
+        <button class="Fonte-Branca-button">Séries :</button>
+        <button class="Fonte-Branca-button">Quantidade :</button>
+        <button class="Fonte-Branca-button">Peso :</button>
+        <button class="Fonte-Branca-Main">CADASTRAR</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="texto-rodape">
+        <h1 class="Fonte-Vermelha">VAMOS FALAR SOBRE A SUA SAÚDE</h1>
+      </div>
+
+      <div class="contatos">
+        <p>
+          <strong>CenterFit</strong><br />
+          Avenida Presidente Kennedy, 397,<br />
+          Panambi, RS, Brazil
+        </p>
+        <p>
+          <strong>Tel.</strong> (55) 99133-9517<br />
+          <strong>E-mail:</strong> academiacenterfit@yahoo.com <br />
+          <strong>Social:</strong> @centerfit_academiafuncional
+        </p>
+      </div>
+
+      <!--pode ser usado um a href na imagem do whats assim vc faz o link para o whatsapp da empresa -->
+
+      <div style="text-align: right">
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=5555984523737"
+          ><img class="logo_whats" src="/img/logo_whattsapp.png"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
