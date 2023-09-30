@@ -1,0 +1,161 @@
+body {
+  background: #ff383e;
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  text-align: left;
+  font-size: 75px;
+  font-family: "Anton", sans-serif;
+  margin: 0px;
+}
+p {
+  color: #fff;
+  font-family: Rounded Mplus 1c;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+header {
+  background-image: url(/img/imagem_topo.png);
+  background-position: center;
+  height: 550px;
+  background-size: cover;
+}
+img {
+  margin-top: 60px;
+  width: 380px;
+}
+button {
+  width: 259px;
+  height: 83px;
+  background: #000;
+  margin: 0px 0px 45px 0px;
+  cursor: pointer;
+}
+footer {
+  background-image: url(/img/Imagem_Base.png);
+  margin: auto;
+  padding-top: 1px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+input {
+  width: 332px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #000;
+  margin: 10px;
+  border: #000;
+  border-radius: none;
+  color: #ffffff;
+  padding-left: 10px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+input:focus{
+  box-shadow: 0 0 0 0;
+  border: 0;
+  outline: 0;
+}
+input::placeholder{
+  
+  color: #fff;
+  font-family: 'Anton';
+  font-size: 23px;
+  font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+input[type="text"]{
+  font-size: 20px;
+  font-style: normal;
+  font-family: 'Anton';
+}
+input[type="email"]{
+  font-size: 20px;
+  font-style: normal;
+  font-family: 'Anton';
+}
+input[type="password"]{
+  font-size: 20px;
+  font-style: normal;
+  font-family: 'Anton';
+}
+.Fonte-Branca-button {
+  color: #fff;
+  text-align: center;
+  font-family: Anton;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 232px;
+  height: 70px;
+}
+
+.Fonte-Vermelha {
+  margin-top: 99px;
+  color: #ff383e;
+  font-family: Anton;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 75px;
+  text-align: center;
+}
+.Fonte-Branca {
+  color: #fff;
+  font-family: Anton;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 75px;
+}
+.Fonte-Branca-Main {
+  font-family: Anton;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.texto-button {
+  color: #fff;
+  text-align: center;
+  font-family: Anton;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 171px;
+  line-height: 45px;
+}
+.button-formato {
+  text-align: center;
+  width: 404px;
+  margin: auto;
+  color: white;
+}
+.topo_logo {
+  text-align: center;
+}
+.texto-top {
+  width: 404px;
+  margin: auto;
+}
+.texto-p-main {
+  width: 297px;
+  height: 60px;
+  margin: auto;
+}
+.logo_whats {
+  background-image: url(/img/logo_whattsapp.png);
+  width: 99px;
+  height: 99px;
+  flex-shrink: 0;
+}
+.contatos {
+  margin: auto;
+  width: 358px;
+}

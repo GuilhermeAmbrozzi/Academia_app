@@ -16,132 +16,14 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=M+PLUS+Rounded+1c:wght@100&family=Montserrat:wght@100&family=Raleway:wght@200&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/assets/css/style.css">
   </head>
   <body>
-    <style>
-      body {
-        background: #ff383e;
-        margin: 0px;
-        padding: 0px;
-      }
-      h1 {
-        text-align: left;
-        font-size: 75px;
-        font-family: "Anton", sans-serif;
-        margin: 0px;
-      }
-      p {
-        color: #fff;
-        font-family: Rounded Mplus 1c;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-      }
-      header {
-        background-image: url(/img/imagem_topo.png);
-        background-position: center;
-        height: 550px;
-      }
-      img {
-        margin-top: 60px;
-        width: 380px;
-      }
-      button {
-        width: 259px;
-        height: 83px;
-        background: #000;
-        margin: 0px 0px 45px 0px;
-        cursor: pointer;
-      }
-      footer {
-        background-image: url(/img/Imagem_Base.png);
-        margin: auto;
-        padding-top: 1px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-      }
-
-      .Fonte-Vermelha {
-        margin-top: 99px;
-        color: #ff383e;
-        font-family: Anton;
-        font-size: 75px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 75px;
-      }
-      .Fonte-Branca {
-        color: #fff;
-        font-family: Anton;
-        font-size: 75px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 75px;
-      }
-      .Fonte-Branca-Main {
-        color: #fff;
-        text-align: center;
-        font-family: Anton;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-      }
-      .Fonte-Branca-button {
-        color: #fff;
-        text-align: center;
-        font-family: Anton;
-        font-size: 23px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-      }
-      .texto-button {
-        color: #fff;
-        text-align: center;
-        font-family: Anton;
-        font-size: 35px;
-        font-style: normal;
-        font-weight: 171px;
-        line-height: 45px;
-      }
-      .button-formato {
-        width: 332px;
-        text-align: center;
-        margin: auto;
-      }
-      .topo_logo {
-        text-align: center;
-      }
-      .texto-top {
-        width: 282px;
-        height: 75px;
-        margin: auto;
-      }
-      .texto-rodape {
-        width: 404px;
-        margin: auto;
-      }
-      .texto-p-main {
-        width: 297px;
-        height: 60px;
-        margin: auto;
-      }
-      .logo_whats {
-        background-image: url(/img/logo_whattsapp.png);
-        width: 99px;
-        height: 99px;
-        flex-shrink: 0;
-      }
-      .contatos {
-        margin: auto;
-        width: 358px;
-      }
-    </style>
     <header>
       <div class="topo_logo">
-        <img src="/img/Logo.png" />
+        <a href="/index.html">
+          <img src="/img/Logo.png" />
+        </a>
       </div>
       <div class="texto-top">
         <h1 class="Fonte-Vermelha">CADASTRO</h1>
@@ -153,10 +35,12 @@
       <h2 class="Fonte-Branca-Main">Crie Sua Conta</h2>
 
       <div class="button-formato">
-        <button class="Fonte-Branca-button">Nome:</button>
-        <button class="Fonte-Branca-button">Email:</button>
-        <button class="Fonte-Branca-button">Senha:</button>
-        <button class="Fonte-Branca-button">Cadastrar:</button>
+        <form>
+          <input type="text" name="nome" id="nome" placeholder="Nome">
+          <input type="email" name="email" id="email" placeholder="Digite seu Email ">
+          <input type="password" name="senha" id="senha" placeholder="Digite uma Senha">
+          <button class="Fonte-Branca-button" onclick="salvarUsuario()">Cadastrar:</button>
+        </form>
       </div>
     </main>
 
@@ -188,5 +72,16 @@
         /></a>
       </div>
     </footer>
+
+    <script>
+      function salvarUsuario(){
+        nome = document.getElementById("nome").value;
+        email = document.getElementById("email").value;
+        senha = document.getElementById("senha").value;
+        localStorage.setItem(nome, '{"nome":"'+ nome +'", "email":"'+email+'", "senha":"'+senha+'"}')
+        alert("O Usuário "+ nome +" foi salvo com sucesso!")
+        console.log(localStorage.getItem(nome))
+      }
+    </script>
   </body>
 </html>

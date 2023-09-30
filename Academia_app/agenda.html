@@ -18,8 +18,52 @@
     />
     <link rel="stylesheet" href="/assets/css/style.css">
   </head>
+<style>
+  
+  
+  #nome{
+    width: 332px;
+    height: 60px;
+    background: black;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+  }
+  #data{
+    width:332px ;
+    height: 60px;
+    background: black;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    margin: 10px auto;
+  }
+  #hora{
+    width: 332px;
+    height: 60px;
+    background: black;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+  }
+  #treino{
+    width: 332px;
+    height: 60px;
+    background: black;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    margin: 10px auto;
+  }
+  #buton_agenda{
+    width: 332px;
+    height: 70px;
+    color: white;
+
+  }
+</style>
   <body>
-    
     <header>
       <div class="topo_logo">
         <a href="/index.html">
@@ -27,40 +71,31 @@
         </a>
       </div>
       <div class="texto-top">
-        <h1 class="Fonte-Vermelha">
-          PREPARE-SE<br />
-          PARA MUDAR
-        </h1>
-        <h1 class="Fonte-Branca">PARA MELHOR.</h1>
+        <h1 class="Fonte-Vermelha">Agenda</h1>
       </div>
     </header>
     <!--Alinhar códigos no vsCode alt + shift + f-->
 
     <main>
-      <h2 class="Fonte-Branca-Main">
-        ESCOLHAS MAIS<br />
-        SAUDÁVEIS
-      </h2>
+      <h2 class="Fonte-Branca-Main">Escolha o melhor horário para você </h2>
 
-      <div class="button-formato">
-        <button
-          class="Fonte-Branca-Main"
-          onclick="window.open('./cadastro.html', '_self')"
-        >
-          CADASTRE-SE
-        </button>
-        <button
-          class="Fonte-Branca-Main"
-          onclick="window.open('./novotreino.html', '_self')"
-        >
-          NOVO TREINO
-        </button>
-        <button class="Fonte-Branca-Main">TREINOS</button>
+      <div class="agenda_formato">
+        <form>
+          <input  type="text" placeholder="nome">
+          <input  type="date" >
+          <input  type="time" >
+          <select  type="text" >
+            <option>Defina seu Treino</option>
+            <option>Musculação</option>
+            <option>Ginastica</option>
+          </select>
+          <button id="buton_agenda">CADASTRAR</button>
+        </form>
       </div>
     </main>
 
     <footer>
-      <div class="texto-top">
+      <div class="texto-rodape">
         <h1 class="Fonte-Vermelha">VAMOS FALAR SOBRE A SUA SAÚDE</h1>
       </div>
 
