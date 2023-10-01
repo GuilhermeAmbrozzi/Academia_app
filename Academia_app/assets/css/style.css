@@ -29,10 +29,11 @@ img {
 }
 button {
   width: 259px;
-  height: 83px;
+  height: 90px;
   background: #000;
   margin: 0px 0px 45px 0px;
   cursor: pointer;
+  color: #ffffff;
 }
 footer {
   background-image: url(../../img/Imagem_Base.png);
@@ -143,10 +144,15 @@ input[type="password"] {
   font-style: normal;
   font-family: "Anton";
 }
+input[type="date"] {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Anton";
+}
 .Fonte-Branca-button {
   color: #fff;
   text-align: center;
-  font-family: Anton;
+  font-family: 'Anton';
   font-size: 23px;
   font-style: normal;
   font-weight: 400;
@@ -154,7 +160,10 @@ input[type="password"] {
   width: 232px;
   height: 70px;
 }
-
+.agenda_formato{
+  margin: auto;
+  text-align: center;
+}
 .Fonte-Vermelha {
   margin-top: 99px;
   color: #ff383e;
@@ -174,7 +183,7 @@ input[type="password"] {
   line-height: 75px;
 }
 .Fonte-Branca-Main {
-  font-family: Anton;
+  font-family: 'Anton';
   font-size: 45px;
   font-weight: 400;
   line-height: 45px;
