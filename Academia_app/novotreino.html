@@ -16,14 +16,14 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=M+PLUS+Rounded+1c:wght@100&family=Montserrat:wght@100&family=Raleway:wght@200&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="../Academia_app/assets/css/style.css">
   </head>
   <body>
 
     <header>
       <div class="topo_logo">
-        <a href="/index.html">
-          <img src="/img/Logo.png" />
+        <a href="/Academia_app/index.html">
+          <img src="../Academia_app/img/Logo.png" />
         </a>
       </div>
       <div class="texto-top">
@@ -36,14 +36,18 @@
       <h2 class="Fonte-Branca-Main">Descreva sua Atividade</h2>
 
       <div class="button-formato">
-        <button class="Fonte-Branca-button">Nome :</button>
-        <button class="Fonte-Branca-button">Descrição :</button>
-        <button class="Fonte-Branca-button">Tempo :</button>
-        <button class="Fonte-Branca-button">Repetições :</button>
-        <button class="Fonte-Branca-button">Séries :</button>
-        <button class="Fonte-Branca-button">Quantidade :</button>
-        <button class="Fonte-Branca-button">Peso :</button>
-        <button class="Fonte-Branca-Main">CADASTRAR</button>
+        <form>
+          <input type="text" name="nome" id="nome" placeholder="Nome">
+          <input type="text" name="descrição" id="descricao" placeholder="Descrição">
+          <input type="time" name="tempo" id="tempo">
+          <select type="time" name="repetições" id="repeticoes">
+            <option value="">Quantas Repetições</option>
+            <option value="">Serie de 5</option>
+            <option value="">Serie de 10</option>
+            <option value="">Serie de 15</option>
+          </select>
+          <button class="Fonte-Branca-button" onclick="salvarUsuario()">Cadastrar:</button>
+        </form>
       </div>
     </main>
 

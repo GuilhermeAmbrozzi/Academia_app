@@ -16,13 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=M+PLUS+Rounded+1c:wght@100&family=Montserrat:wght@100&family=Raleway:wght@200&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="../Academia_app/assets/css/style.css">
   </head>
   <body>
     <header>
       <div class="topo_logo">
-        <a href="/index.html">
-          <img src="/img/Logo.png" />
+        <a href="/Academia_app/index.html">
+          <img src="../Academia_app/img/Logo.png" />
         </a>
       </div>
       <div class="texto-top">
@@ -36,7 +36,18 @@
 
       <div class="button-formato">
         <form>
-          <input id="nome" type="text" placeholder="nome">
+          <input type="text" name="nome" id="nome" placeholder="Nome">
+          <input type="text" name="data" id="data" placeholder="Data">
+          <input type="time" name="tempo" id="hora">
+          <select type="time" name="repetições" id="treino"placeholder=Treino >
+            <option value="opção1">Escolha um Treino</option>
+            <option value="opção2">Treino Cardiovascular</option>
+            <option value="opção3">Treino de Definição</option>
+            <option value="opção4">Treino de Força</option>
+            <option value="opção5">Treino de Hipertrofia</option>
+            <option value="opção5">Treino de Ginastica</option>
+          </select>
+          <button class="Fonte-Branca-button" onclick="salvarUsuario()">Cadastrar:</button>
         </form>
       </div>
     </main>

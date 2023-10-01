@@ -18,7 +18,7 @@ p {
   line-height: 30px;
 }
 header {
-  background-image: url(/img/imagem_topo.png);
+  background-image: url(../../img/imagem_topo.png);
   background-position: center;
   height: 550px;
   background-size: cover;
@@ -35,11 +35,35 @@ button {
   cursor: pointer;
 }
 footer {
-  background-image: url(/img/Imagem_Base.png);
+  background-image: url(../../img/Imagem_Base.png);
   margin: auto;
   padding-top: 1px;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-size: cover;
+}
+th{
+  width: 98px;
+  height: 50px;
+  top: 452px;
+  left: 40px;
+  color: #ffffff;
+  font-size: 25px;
+  font-style: normal;
+  font-family: "Anton";
+}
+td{
+  width: 28px;
+  height: 21px;
+  top: 541px;
+  left: 68px;
+  font-size: 20px;
+  font-family: 'Anton';
+  font-style: normal;
+  color: #ffffff;
+  background: #000;
+  border: 2px solid white;
+  padding: 0;
 }
 input {
   width: 332px;
@@ -54,34 +78,70 @@ input {
   margin-top: 23px;
   margin-bottom: 23px;
 }
-input:focus{
+select {
+  width: 332px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #000;
+  margin: 10px;
+  border: #000;
+  border-radius: none;
+  color: #ffffff;
+  padding-left: 10px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Anton";
+}
+option{
+  width: 332px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #000;
+  margin: 10px;
+  border: #000;
+  border-radius: none;
+  color: #ffffff;
+  padding-left: 10px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Anton";
+}
+input:focus {
   box-shadow: 0 0 0 0;
   border: 0;
   outline: 0;
 }
-input::placeholder{
-  
+input::placeholder {
   color: #fff;
-  font-family: 'Anton';
+  font-family: "Anton";
   font-size: 23px;
   font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-input[type="text"]{
+input[type="text"] {
   font-size: 20px;
   font-style: normal;
-  font-family: 'Anton';
+  font-family: "Anton";
 }
-input[type="email"]{
+input[type="time"] {
   font-size: 20px;
   font-style: normal;
-  font-family: 'Anton';
+  font-family: "Anton";
 }
-input[type="password"]{
+input[type="email"] {
   font-size: 20px;
   font-style: normal;
-  font-family: 'Anton';
+  font-family: "Anton";
+}
+input[type="password"] {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Anton";
 }
 .Fonte-Branca-button {
   color: #fff;
@@ -150,10 +210,11 @@ input[type="password"]{
   margin: auto;
 }
 .logo_whats {
-  background-image: url(/img/logo_whattsapp.png);
+  background-image: url(../../img/logo_whattsapp.png);
   width: 99px;
   height: 99px;
   flex-shrink: 0;
+  padding: 1px;
 }
 .contatos {
   margin: auto;
