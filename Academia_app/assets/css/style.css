@@ -324,3 +324,9 @@ input[type="date"] {
   margin: auto;
   width: 358px;
 }
+  #buton_agenda{
+    width: 332px;
+    height: 70px;
+    color: white;
+
+  }

@@ -18,51 +18,7 @@
     />
     <link rel="stylesheet" href="../Academia_app/assets/css/style.css">
   </head>
-<style>
-  
-  
-  #nome{
-    width: 332px;
-    height: 60px;
-    background: black;
-    flex-direction: column;
-    display: flex;
-    margin: auto;
-  }
-  #data{
-    width:332px ;
-    height: 60px;
-    background: black;
-    color: white;
-    flex-direction: column;
-    display: flex;
-    margin: 10px auto;
-  }
-  #hora{
-    width: 332px;
-    height: 60px;
-    background: black;
-    color: white;
-    flex-direction: column;
-    display: flex;
-    margin: auto;
-  }
-  #treino{
-    width: 332px;
-    height: 60px;
-    background: black;
-    color: white;
-    flex-direction: column;
-    display: flex;
-    margin: 10px auto;
-  }
-  #buton_agenda{
-    width: 332px;
-    height: 70px;
-    color: white;
 
-  }
-</style>
   <body>
     <header>
       <div class="topo_logo">
@@ -81,15 +37,15 @@
 
       <div class="button-formato">
         <form>
-          <input  type="text" placeholder="nome">
-          <input  type="date" >
-          <input  type="time" >
-          <select  type="text" >
+          <input id="nome"  type="text" placeholder="nome">
+          <input id="data" type="date" >
+          <input id="hora" type="time" >
+          <select id="treino" type="text" >
             <option>Defina seu Treino</option>
             <option>Musculação</option>
             <option>Ginastica</option>
           </select>
-          <button class="Fonte-Branca-button">CADASTRAR</button>
+          <button class="Fonte-Branca-button" onclick="salvarNaAgenda()">CADASTRAR</button>
         </form>
       </div>
     </main>
@@ -122,5 +78,6 @@
         /></a>
       </div>
     </footer>
+    <script src="/JavaScript/script.js"></script>
   </body>
 </html>
