@@ -68,20 +68,10 @@
         <a
           target="_blank"
           href="https://api.whatsapp.com/send?phone=5555984523737"
-          ><img class="logo_whats" src="/img/logo_whattsapp.png"
+          ><img class="logo_whats" src="./img/logo_whattsapp.png"
         /></a>
       </div>
     </footer>
-
-    <script>
-      function salvarUsuario(){
-        nome = document.getElementById("nome").value;
-        email = document.getElementById("email").value;
-        senha = document.getElementById("senha").value;
-        localStorage.setItem(nome, '{"nome":"'+ nome +'", "email":"'+email+'", "senha":"'+senha+'"}')
-        alert("O Usuário "+ nome +" foi salvo com sucesso!")
-        console.log(localStorage.getItem(nome))
-      }
-    </script>
+    <script src="/JavaScript/script.js"></script>
   </body>
 </html>
