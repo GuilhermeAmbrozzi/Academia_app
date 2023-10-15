@@ -3,12 +3,14 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
 h1 {
   text-align: left;
   font-size: 75px;
   font-family: "Anton", sans-serif;
   margin: 0px;
 }
+
 p {
   color: #fff;
   font-family: Rounded Mplus 1c;
@@ -17,16 +19,19 @@ p {
   font-weight: 400;
   line-height: 30px;
 }
+
 header {
   background-image: url(../../img/imagem_topo.png);
   background-position: center;
   height: 550px;
   background-size: cover;
 }
+
 img {
   margin-top: 60px;
   width: 380px;
 }
+
 button {
   width: 259px;
   height: 90px;
@@ -35,6 +40,7 @@ button {
   cursor: pointer;
   color: #ffffff;
 }
+
 footer {
   background-image: url(../../img/Imagem_Base.png);
   margin: auto;
@@ -43,7 +49,8 @@ footer {
   background-size: 100%;
   background-size: cover;
 }
-th{
+
+th {
   width: 98px;
   height: 50px;
   top: 452px;
@@ -53,19 +60,21 @@ th{
   font-style: normal;
   font-family: "Anton";
 }
-td{
+
+td {
   width: 28px;
   height: 21px;
   top: 541px;
   left: 68px;
   font-size: 20px;
-  font-family: 'Anton';
+  font-family: "Anton";
   font-style: normal;
   color: #ffffff;
   background: #000;
   border: 2px solid white;
   padding: 0;
 }
+
 input {
   width: 332px;
   height: 40px;
@@ -79,6 +88,7 @@ input {
   margin-top: 23px;
   margin-bottom: 23px;
 }
+
 select {
   width: 332px;
   height: 40px;
@@ -95,7 +105,8 @@ select {
   font-style: normal;
   font-family: "Anton";
 }
-option{
+
+option {
   width: 332px;
   height: 40px;
   flex-shrink: 0;
@@ -111,11 +122,13 @@ option{
   font-style: normal;
   font-family: "Anton";
 }
+
 input:focus {
   box-shadow: 0 0 0 0;
   border: 0;
   outline: 0;
 }
+
 input::placeholder {
   color: #fff;
   font-family: "Anton";
@@ -124,46 +137,119 @@ input::placeholder {
   font-weight: 400;
   line-height: normal;
 }
+
 input[type="text"] {
   font-size: 20px;
   font-style: normal;
   font-family: "Anton";
 }
+
 input[type="time"] {
   font-size: 20px;
   font-style: normal;
   font-family: "Anton";
 }
+
 input[type="email"] {
   font-size: 20px;
   font-style: normal;
   font-family: "Anton";
 }
+
 input[type="password"] {
   font-size: 20px;
   font-style: normal;
   font-family: "Anton";
 }
+
 input[type="date"] {
   font-size: 20px;
   font-style: normal;
   font-family: "Anton";
 }
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+  width: 377px;
+  height: 211px;
+  margin: auto;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-body {
+  background-color: #000;
+  padding: 15px 30px;
+  width: 316px;
+  height: 180px;
+  flex-shrink: 0;
+}
+
+.modal-body .close {
+  position: absolute;
+  margin-top: 0;
+  margin-left: 315px;
+  color: #fff;
+  font-family: Anton;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  width: 30px;
+  height: 30px;
+}
+.modal-body a {
+  text-decoration: none;
+}
+.Modal-Vermelha {
+  color: #ff383e;
+  font-family: Anton;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0;
+  /* 100% */
+}
+
+.Modal-Branca {
+  color: #fff;
+  font-family: Anton;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0;
+}
+
 .Fonte-Branca-button {
   color: #fff;
   text-align: center;
-  font-family: 'Anton';
+  font-family: "Anton";
   font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 232px;
-  height: 70px;
 }
-.agenda_formato{
+
+.agenda_formato {
   margin: auto;
   text-align: center;
 }
+
 .Fonte-Vermelha {
   margin-top: 99px;
   color: #ff383e;
@@ -174,6 +260,7 @@ input[type="date"] {
   line-height: 75px;
   text-align: center;
 }
+
 .Fonte-Branca {
   color: #fff;
   font-family: Anton;
@@ -182,8 +269,9 @@ input[type="date"] {
   font-weight: 400;
   line-height: 75px;
 }
+
 .Fonte-Branca-Main {
-  font-family: 'Anton';
+  font-family: "Anton";
   font-size: 45px;
   font-weight: 400;
   line-height: 45px;
@@ -191,6 +279,7 @@ input[type="date"] {
   text-align: center;
   color: #fff;
 }
+
 .texto-button {
   color: #fff;
   text-align: center;
@@ -200,24 +289,29 @@ input[type="date"] {
   font-weight: 171px;
   line-height: 45px;
 }
+
 .button-formato {
   text-align: center;
   width: 404px;
   margin: auto;
   color: white;
 }
+
 .topo_logo {
   text-align: center;
 }
+
 .texto-top {
   width: 404px;
   margin: auto;
 }
+
 .texto-p-main {
   width: 297px;
   height: 60px;
   margin: auto;
 }
+
 .logo_whats {
   background-image: url(../../img/logo_whattsapp.png);
   width: 99px;
@@ -225,6 +319,7 @@ input[type="date"] {
   flex-shrink: 0;
   padding: 1px;
 }
+
 .contatos {
   margin: auto;
   width: 358px;

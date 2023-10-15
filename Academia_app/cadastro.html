@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=M+PLUS+Rounded+1c:wght@100&family=Montserrat:wght@100&family=Raleway:wght@200&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../Academia_app/assets/css/style.css">
+    <link rel="stylesheet" href="../Academia_app/assets/css/style.css" />
   </head>
   <body>
     <header>
@@ -36,11 +36,32 @@
 
       <div class="button-formato">
         <form>
-          <input type="text" name="nome" id="nome" placeholder="Nome">
-          <input type="email" name="email" id="email" placeholder="Digite seu Email ">
-          <input type="password" name="senha" id="senha" placeholder="Digite uma Senha">
-          <button class="Fonte-Branca-button" onclick="salvarUsuario()">Cadastrar:</button>
+          <input type="text" name="nome" id="nome" placeholder="Nome" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite seu Email "
+          />
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="Digite uma Senha"
+          />
+          <button class="Fonte-Branca-button" onclick="salvarUsuario()">
+            Cadastrar:
+          </button>
         </form>
+      </div>
+      <div id="modal-cadastro" class="modal">
+        <div class="modal-body">
+          <button class="close" onclick="fechar()">X</button>
+          <a href="/Academia_app/novotreino.html">
+            <h2 class="Modal-Vermelha">OBRIGADO POR SE CADASTRAS!</h2>
+            <h2 class="Modal-Branca">VAMOS PARA O PRIMEIRO TREINO</h2>
+          </a>
+        </div>
       </div>
     </main>
 
